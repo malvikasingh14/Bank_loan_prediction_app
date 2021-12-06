@@ -3,10 +3,10 @@ from PIL import Image
 import pickle
 
 
-model = pickle.load(open('C:/Users/91981/Documents/myprojects/Bank_Loan_prediction/ML_Model.pkl', 'rb'))
+model = pickle.load(open('https://github.com/malvikasingh14/streamlit-to-github-Bank_loan_/blob/malvikasingh14/ML_Model.pkl', 'rb'))
 
 def run():
-    img1 = Image.open('C:/Users/91981/Documents/myprojects/Bank_Loan_prediction/bank.png')
+    img1 = Image.open('https://github.com/malvikasingh14/streamlit-to-github-Bank_loan_/blob/malvikasingh14/bank.png')
     img1 = img1.resize((156,145))
     st.image(img1,use_column_width=False)
     st.title("Bank Loan Prediction using Machine Learning")
