@@ -9,6 +9,7 @@ def run():
     
    
     st.title("Bank Loan Prediction using Machine Learning")
+    st.subheader('made by: Malvika Singh')
 
     ## Account No
     account_no = st.text_input('Account number')
