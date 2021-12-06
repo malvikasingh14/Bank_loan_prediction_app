@@ -2,14 +2,12 @@ import streamlit as st
 from PIL import Image
 import pickle
 
-path = os.path.dirname(Bank_Loan_prediction)
-my_file1 = path+'/ML_Model.pkl'
-model = pickle.load(open('my_file1', 'rb'))
+
+model = pickle.load(open('ML_Model.pkl', 'rb'))
 
 def run():
-    path = os.path.dirname(Bank_Loan_prediction)
-    my_file = path+'/bank.png'
-    img1 = Image.open('https://github.com/malvikasingh14/streamlit-to-github-Bank_loan_/blob/malvikasingh14/bank.png')
+    
+    img1 = Image.open('bank.png')
     img1 = img1.resize((156,145))
     st.image(img1,use_column_width=False)
     st.title("Bank Loan Prediction using Machine Learning")
