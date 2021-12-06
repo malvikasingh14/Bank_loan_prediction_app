@@ -2,10 +2,13 @@ import streamlit as st
 from PIL import Image
 import pickle
 
-
-model = pickle.load(open('https://github.com/malvikasingh14/streamlit-to-github-Bank_loan_/blob/malvikasingh14/ML_Model.pkl', 'rb'))
+path = os.path.dirname(Bank_Loan_prediction)
+my_file1 = path+'/ML_Model.pkl'
+model = pickle.load(open('my_file1', 'rb'))
 
 def run():
+    path = os.path.dirname(Bank_Loan_prediction)
+    my_file = path+'/bank.png'
     img1 = Image.open('https://github.com/malvikasingh14/streamlit-to-github-Bank_loan_/blob/malvikasingh14/bank.png')
     img1 = img1.resize((156,145))
     st.image(img1,use_column_width=False)
