@@ -7,9 +7,7 @@ model = pickle.load(open('ML_Model.pkl', 'rb'))
 
 def run():
     
-    img1 = Image.open('bank.png')
-    img1 = img1.resize((156,145))
-    st.image(img1,use_column_width=False)
+   
     st.title("Bank Loan Prediction using Machine Learning")
 
     ## Account No
