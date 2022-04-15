@@ -4,5 +4,5 @@ numpy
 pandas
 matplotlib
 streamlit==0.76.0
-
+click==8
 
